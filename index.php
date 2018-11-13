@@ -1,8 +1,11 @@
 <?php
 /**
- * Start der Session
+ * Cookie schreiben
+ * Timestamp als Wert
+ * Gültigkeitsdauer 120 Tage
  */
-session_start();
+setcookie("Image2Food", time(), time() + (60 * 60 * 24 * 120));
+
 /**
  * Festlegung der Untergrenze für die PHP-Version
  * @version: 1.0
@@ -16,23 +19,13 @@ if (0 > version_compare(PHP_VERSION, '5')) {
 	<head>
 		<meta charset="utf-8">
 		<title>Image2Food –
-			Sag mir, was ich daraus kochen kann – Login </title>
+			Sag mir, was ich daraus kochen kann – Index </title>
 		<meta name="viewport" content=
 		"width=device-width; initial-scale=1.0">
 	</head>
 	<body>
-		<div id="nav">
-			<?php
-			require ("nav.php");
-			?>
-		</div>
-		<div id="content">
-
-			<h1>Login</h1>
-			<?php
-				require ("login.inc.php");
-			?>
-
-		</div>
+		<?php
+			require("nav.php");
+		?>
 	</body>
 </html>
