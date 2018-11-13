@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="E87DCD1234617D48">
+  <PROJECT FORMAT="1.00" NAME="Übung" AUTHOR="ralph" CREATED="2014.01.27 11:34:17" MODIFIED="2014.03.17 08:14:27">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="registrieren.php" CREATED="2014.01.27 11:34:25" MODIFIED="2014.03.17 08:14:27">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="6">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[registrieren.php]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="33">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="43">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="46">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="37">
+                <TEXT><![CDATA[nav.php]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="38">
+                <TEXT><![CDATA[plausi.inc.php]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="39">
+                <TEXT><![CDATA[registrieren.inc.php]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="42" FROM="43" TO="46" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="33" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="40" FROM="37" TO="33" TEXT="Einbinden (require)" />
+          <CONNECTION FORMAT="1.00" ID="34" FROM="33" TO="43" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="47" FROM="46" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="49" FROM="39" TO="46" TEXT="Einbinden (require)" />
+          <CONNECTION FORMAT="1.00" ID="50" FROM="38" TO="43" TEXT="Einbinden (require)" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Funktion registrieren()" CREATED="2014.03.04 09:33:54" MODIFIED="2014.03.04 09:33:54">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="4">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="7">
+                <TEXT><![CDATA[$this -> eintragen_db()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Funktion registrieren()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[$this -> plausibilisieren()?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="8" FROM="4" TO="7" TEXT="Ok" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="2" NAME="Funktion plausibilisieren()" CREATED="2014.03.04 09:36:49" MODIFIED="2014.03.04 09:47:41">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="18">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="42">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="47">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="48">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="49">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="50">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="14">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="30">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="15">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA[Return false]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="16">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="35">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Funktion plausibilisieren()]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Counter Fehler = 0]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Teste Namen ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="44">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="11">
+                <TEXT><![CDATA[Teste Vornamen?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="52">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="15">
+                <TEXT><![CDATA[Teste E-Mail]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="56">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[Teste Userid]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="60">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="11">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[Teste Passwort]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="64">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="13">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[Bereinige Kritische Zeichen Zusatzinfo]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="14">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[Counter Fehler > 0?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="15">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="40">
+                <TEXT><![CDATA[Return true]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="16">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="37">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="17">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="45" FROM="44" TO="11" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="4" TO="8" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="12" FROM="11" TO="10" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="53" FROM="52" TO="15" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="16" FROM="15" TO="14" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="57" FROM="56" TO="19" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="19" TO="18" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="61" FROM="60" TO="23" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="23" TO="22" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="65" FROM="64" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="27" FROM="26" TO="28" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="38" FROM="37" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="31" FROM="28" TO="30" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="30" TO="34" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="36" FROM="34" TO="35" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="28" TO="40" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="39" FROM="35" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="40" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="43" FROM="8" TO="42" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="44" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="46" FROM="42" TO="44" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="51" FROM="10" TO="47" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="11" TO="52" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="54" FROM="47" TO="52" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="55" FROM="14" TO="48" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="15" TO="56" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="58" FROM="48" TO="56" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="59" FROM="18" TO="49" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="19" TO="60" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="62" FROM="49" TO="60" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="63" FROM="22" TO="50" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="23" TO="64" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="66" FROM="50" TO="64" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="3" NAME="Funktion plausibilisieren() - Login" CREATED="2014.03.04 09:36:49" MODIFIED="2014.03.04 09:48:11">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="11">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="49">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[Counter++]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="50">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="30">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA[Return false]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="35">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Funktion plausibilisieren() - Login]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Counter Fehler = 0]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[Teste Userid]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="60">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[Teste Passwort]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="64">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[Counter Fehler > 0?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="40">
+                <TEXT><![CDATA[Return true]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="37">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="19" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="19" TO="18" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="61" FROM="60" TO="23" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="23" TO="22" TEXT="Fehler" />
+          <CONNECTION FORMAT="1.00" ID="65" FROM="64" TO="28" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="38" FROM="37" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="31" FROM="28" TO="30" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="30" TO="34" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="36" FROM="34" TO="35" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="28" TO="40" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="39" FROM="35" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="40" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="59" FROM="18" TO="49" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="19" TO="60" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="62" FROM="49" TO="60" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="63" FROM="22" TO="50" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="23" TO="64" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="66" FROM="50" TO="64" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
